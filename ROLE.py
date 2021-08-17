@@ -142,6 +142,6 @@ if __name__ == '__main__':
 
             schedule.every(5).minutes.do(automate_attendance, cwdir_name=cwd_name, username=user_name, password=user_pass)
 
-            automate_attendance(cwdir_name = cwd_name, username = user_name, password = user_pass)
+            automate_attendance(cwdir_name=cwd_name, username=user_name, password=user_pass)
             while True:
                 schedule.run_pending()
