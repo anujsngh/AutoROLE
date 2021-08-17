@@ -22,7 +22,6 @@ def show_notification(title=None, message_text=None):
 
 def do_login(driver=None, username=None, password=None):
     print("Logging In ......")
-    # driver.get("https://cse.rgpvonline.org/login/index.php")
     # driver.get("https://cse.rgpvonline.org/calendar/view.php?view=upcoming")
     driver.get("https://cse.rgpvonline.org/calendar/view.php?view=day")
     driver.implicitly_wait(10)
