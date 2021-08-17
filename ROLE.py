@@ -136,8 +136,8 @@ if __name__ == '__main__':
     while True:
         if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
             cwd_name = os.path.dirname(os.path.realpath(__file__)).replace('\\', '/')
-            user_name = os.environ.get('MOODLE_USERNAME')
-            user_pass = os.environ.get('MOODLE_PASSWORD')
+            user_name = os.environ.get('ROLE_USERNAME')
+            user_pass = os.environ.get('ROLE_PASSWORD')
 
             # schedule.every(5).minutes.do(show_notification, title="Test Notification", message_text="Test Message Text")
             schedule.every(5).minutes.do(automate_attendance, cwdir_name=cwd_name, username=user_name, password=user_pass)
