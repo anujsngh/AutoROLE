@@ -107,7 +107,7 @@ def make_me_present(driver=None, status_link_list=None):
                 show_notification(title="Error Occurred!!!", message_text=exp)
 
 
-def automate_attendance(cwdir_name, username, password):
+def automate_attendance(cwdir_name=None, username=None, password=None):
     print("Starting Session ......")
     service = Service("/".join([cwdir_name, 'chromedriver']))
     service.start()
