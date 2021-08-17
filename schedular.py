@@ -1,3 +1,4 @@
+# This script is just for reference.
 import schedule
 import time
 
