@@ -7,3 +7,4 @@ steps:
 3) create virtual environment -> https://www.youtube.com/watch?v=APOPm01BVrk
 4) install requirements using this command "pip install -r requirements.txt" in terminal.
 5) run "python ROLE.py" in your terminal.
+6) if facing any error regarding chromedriver then install according to your chrome version. -> https://chromedriver.chromium.org/downloads
