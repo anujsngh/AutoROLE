@@ -2,7 +2,7 @@
 This simple script automates attendance process in ROLE.
 
 steps:
-1) Create "MOODLE_USERNAME" and "MOODLE_PASSWORD" environ variables in environment variables with their values as your moodle/ROLE username and password respectively.
+1) Create "ROLE_USERNAME" and "ROLE_PASSWORD" environ variables in environment variables with their values as your moodle/ROLE username and password respectively.
 2) install python -> https://www.youtube.com/watch?v=UvcQlPZ8ecA
 3) create virtual environment -> https://www.youtube.com/watch?v=APOPm01BVrk
 4) install requirements using this command "pip install -r requirements.txt" in terminal.
