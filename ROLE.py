@@ -1,4 +1,6 @@
 import os
+import time
+
 import pandas as pd
 import schedule
 import datetime as dt
@@ -145,3 +147,6 @@ if __name__ == '__main__':
             automate_attendance(cwdir_name=cwd_name, username=user_name, password=user_pass)
             while True:
                 schedule.run_pending()
+        else:
+            print("This is no time for a class !!!")
+            time.sleep(60)
