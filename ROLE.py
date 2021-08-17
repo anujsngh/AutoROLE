@@ -109,6 +109,7 @@ def make_me_present(driver=None, status_link_list=None):
 
 def automate_attendance(cwdir_name=None, username=None, password=None):
     print("Starting Session ......")
+    print(f"Current Time : {dt.datetime.now()}")
     service = Service("/".join([cwdir_name, 'chromedriver']))
     service.start()
     options = webdriver.ChromeOptions()
