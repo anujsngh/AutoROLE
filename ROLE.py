@@ -1,13 +1,11 @@
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.select import Select
+import os
+import pandas as pd
+import schedule
+import datetime as dt
+from bs4 import BeautifulSoup
 from plyer import notification
 from selenium import webdriver
-from bs4 import BeautifulSoup
-import datetime as dt
-import pandas as pd
-import time
-import schedule
-import os
+from selenium.webdriver.chrome.service import Service
 
 
 def show_notification(title=None, message_text=None):
@@ -115,7 +113,7 @@ def automate_attendance(cwdir_name, username, password):
     service = Service("/".join([cwdir_name, 'chromedriver']))
     service.start()
     options = webdriver.ChromeOptions()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     options = options.to_capabilities()
     driver = webdriver.Remote(service.service_url, options)
 
@@ -136,12 +134,14 @@ def automate_attendance(cwdir_name, username, password):
 
 
 if __name__ == '__main__':
-    cwd_name = os.path.dirname(os.path.realpath(__file__)).replace('\\', '/')
-    user_name = os.environ.get('MOODLE_USERNAME')
-    user_pass = os.environ.get('MOODLE_PASSWORD')
-
-    # schedule.every(5).minutes.do(show_notification, title="Test Notification", message_text="Test Message Text")
-    schedule.every(5).minutes.do(automate_attendance, cwdir_name=cwd_name, username=user_name, password=user_pass)
-
     while True:
-        schedule.run_pending()
+        if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
+            cwd_name = os.path.dirname(os.path.realpath(__file__)).replace('\\', '/')
+            user_name = os.environ.get('MOODLE_USERNAME')
+            user_pass = os.environ.get('MOODLE_PASSWORD')
+
+            # schedule.every(5).minutes.do(show_notification, title="Test Notification", message_text="Test Message Text")
+            schedule.every(5).minutes.do(automate_attendance, cwdir_name=cwd_name, username=user_name, password=user_pass)
+
+            while True:
+                schedule.run_pending()
