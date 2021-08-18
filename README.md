@@ -1,5 +1,5 @@
 # Automate_ROLE
-This simple script automates attendance process in ROLE.
+This simple script automates attendance process in ROLE/MOODLE.
 
 steps:
 1) Create "ROLE_USERNAME" and "ROLE_PASSWORD" environ variables in environment variables with their values as your moodle/ROLE username and password respectively.
