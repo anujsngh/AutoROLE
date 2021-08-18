@@ -8,3 +8,4 @@ steps:
 4) install requirements using this command "pip install -r requirements.txt" in terminal.
 5) run "python ROLE.py" in your terminal.
 6) if facing any error regarding chromedriver then install according to your chrome version. -> https://chromedriver.chromium.org/downloads
+7) If you want to remove the hassle of running this script daily then you can schedule this script with windows task schedular or crontab.
