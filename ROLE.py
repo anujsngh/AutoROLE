@@ -110,6 +110,7 @@ def make_me_present(driver=None, status_link_list=None):
 
 
 def automate_attendance(cwdir_name=None, username=None, password=None):
+    print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %H:%M")}')
     print("Starting Session ......")
     service = Service("/".join([cwdir_name, 'chromedriver']))
     service.start()
@@ -137,7 +138,6 @@ def automate_attendance(cwdir_name=None, username=None, password=None):
 if __name__ == '__main__':
     while True:
         try:
-            print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %H:%M")}')
             if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
                 cwd_name = os.path.dirname(os.path.realpath(__file__)).replace('\\', '/')
                 user_name = os.environ.get('ROLE_USERNAME')
