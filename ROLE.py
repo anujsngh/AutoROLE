@@ -10,7 +10,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 
-logging.basicConfig(filename='role.log', filemode='a', format='%(asctime)s :: %(levelname)s :: %(message)s', datefmt='%Y-%m-%d %I:%M:%S%p', level=logging.DEBUG)
+logging.basicConfig(filename='role.log', filemode='a', format='%(asctime)s :: %(levelname)s :: %(message)s', datefmt='%Y-%m-%d %I:%M:%S%p', level=logging.INFO)
 
 
 def show_notification(title=None, message_text=None):
@@ -44,7 +44,7 @@ def do_login(driver=None, username=None, password=None):
 
 
 def get_attendance_events(driver=None):
-    logging.debug("Getting Attendance Event Card List for Today.")
+    logging.info("Getting Attendance Event Card List for Today.")
     event_soup = BeautifulSoup(driver.page_source, "lxml")
 
     div_list = event_soup.find_all("div")
@@ -62,7 +62,7 @@ def get_attendance_events(driver=None):
 
 
 def get_activity_links(event_card_list=None):
-    logging.debug("Getting Attendance Activity Links From Event Card List for Today.")
+    logging.info("Getting Attendance Activity Links From Event Card List for Today.")
     activity_link_list = []
     for event_card in event_card_list:
         card_activity_link = event_card.find("a", {"class": "card-link"})["href"]
@@ -73,7 +73,7 @@ def get_activity_links(event_card_list=None):
 
 def get_sub_activity_list(driver=None):
     sub_name = driver.find_element_by_css_selector("h1").text
-    logging.debug(f"Checking Active Attendance Links for {sub_name}")
+    logging.info(f"Checking Active Attendance Links for {sub_name}")
     sub_soup = BeautifulSoup(driver.page_source, "lxml")
 
     attendance_table = sub_soup.find("table", {"class": "generaltable"})
@@ -94,11 +94,11 @@ def get_sub_activity_list(driver=None):
 
 def make_me_present(driver=None, status_link_list=None):
     sub_name = driver.find_element_by_css_selector("h1").text
-    logging.info(f"Got Active Attendance Link for {sub_name} and trying to make you present at the class.")
+    logging.info(f"Got {len(status_link_list)} Active Attendance Link for {sub_name}")
     print(sub_name)
     print(status_link_list)
-    logging.debug(f"Count of active attendance links : {len(status_link_list)} for {sub_name}")
     if len(status_link_list):
+        logging.info("Trying to make you present ......")
         for status_link in status_link_list:
             driver.get(status_link)
             driver.implicitly_wait(10)
@@ -124,7 +124,8 @@ def make_me_present(driver=None, status_link_list=None):
 def automate_attendance(cwdir_name=None, username=None, password=None):
     print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}')
     try:
-        print("Starting Session ......")
+        print()
+        logging.info("Starting Session ......")
         service = Service("/".join([cwdir_name, 'chromedriver']))
         service.start()
         options = webdriver.ChromeOptions()
@@ -146,12 +147,13 @@ def automate_attendance(cwdir_name=None, username=None, password=None):
 
         driver.quit()
         print("Ending Session ......\n")
+        logging.info("Ending Session ......")
     except Exception as error:
         logging.error(f"Error : {error} at automate_attendance", stack_info=True)
 
 
 if __name__ == '__main__':
-    logging.debug("Script started for today.")
+    logging.info("Script started for today.")
     while True:
         try:
             if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
@@ -164,7 +166,8 @@ if __name__ == '__main__':
                 automate_attendance(cwdir_name=cwd_name, username=user_name, password=user_pass)
                 while True:
                     schedule.run_pending()
-                    break
+                logging.info("Ending Script For Today.")
+                break
             else:
                 print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}')
                 print("This is no time for a class !!!\n")

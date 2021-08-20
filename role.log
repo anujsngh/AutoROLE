@@ -1,6 +1,11 @@
-2021-08-20 09:52:28AM :: DEBUG :: Script started for today.
-2021-08-20 09:53:28AM :: DEBUG :: Script started for today.
-2021-08-20 09:54:28AM :: DEBUG :: Script started for today.
-2021-08-20 09:55:28AM :: DEBUG :: Script started for today.
-2021-08-20 09:56:28AM :: DEBUG :: Script started for today.
-2021-08-20 09:57:28AM :: DEBUG :: Script started for today.
+2021-08-20 11:40:58AM :: INFO :: Script started for today.
+2021-08-20 11:40:58AM :: INFO :: Starting Session ......
+2021-08-20 11:40:59AM :: INFO :: Logging In ......
+2021-08-20 11:41:06AM :: INFO :: Successfully Logged In !!!
+2021-08-20 11:41:06AM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 11:41:06AM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 11:41:11AM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 11:41:11AM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 11:41:12AM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 11:41:12AM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 11:41:12AM :: INFO :: Ending Session ......
