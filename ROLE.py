@@ -1,8 +1,8 @@
 import os
 import time
-
-import pandas as pd
+import logging
 import schedule
+import pandas as pd
 import datetime as dt
 from bs4 import BeautifulSoup
 from plyer import notification
@@ -10,7 +10,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 
+logging.basicConfig(filename='role.log', filemode='a', format='%(asctime)s :: %(levelname)s :: %(message)s', datefmt='%Y-%m-%d %I:%M:%S%p', level=logging.INFO)
+
+
 def show_notification(title=None, message_text=None):
+    logging.info(title + " " + message_text)
     notification.notify(
             title=title,
             message=message_text,
@@ -24,6 +28,7 @@ def show_notification(title=None, message_text=None):
 
 def do_login(driver=None, username=None, password=None):
     print("Logging In ......")
+    logging.info("Logging In ......")
     # driver.get("https://cse.rgpvonline.org/calendar/view.php?view=upcoming")
     driver.get("https://cse.rgpvonline.org/calendar/view.php?view=day")
     driver.implicitly_wait(10)
@@ -35,10 +40,11 @@ def do_login(driver=None, username=None, password=None):
     driver.find_element_by_xpath('//*[@id="rememberusername"]').click()
     login_btn.click()
     print("Successfully Logged In !!!")
+    logging.info("Successfully Logged In !!!")
 
 
 def get_attendance_events(driver=None):
-
+    logging.info("Getting Attendance Event Card List for Today.")
     event_soup = BeautifulSoup(driver.page_source, "lxml")
 
     div_list = event_soup.find_all("div")
@@ -56,6 +62,7 @@ def get_attendance_events(driver=None):
 
 
 def get_activity_links(event_card_list=None):
+    logging.info("Getting Attendance Activity Links From Event Card List for Today.")
     activity_link_list = []
     for event_card in event_card_list:
         card_activity_link = event_card.find("a", {"class": "card-link"})["href"]
@@ -65,6 +72,8 @@ def get_activity_links(event_card_list=None):
 
 
 def get_sub_activity_list(driver=None):
+    sub_name = driver.find_element_by_css_selector("h1").text
+    logging.info(f"Checking Active Attendance Links for {sub_name}")
     sub_soup = BeautifulSoup(driver.page_source, "lxml")
 
     attendance_table = sub_soup.find("table", {"class": "generaltable"})
@@ -85,9 +94,11 @@ def get_sub_activity_list(driver=None):
 
 def make_me_present(driver=None, status_link_list=None):
     sub_name = driver.find_element_by_css_selector("h1").text
+    logging.info(f"Got {len(status_link_list)} Active Attendance Link for {sub_name}")
     print(sub_name)
     print(status_link_list)
     if len(status_link_list):
+        logging.info("Trying to make you present ......")
         for status_link in status_link_list:
             driver.get(status_link)
             driver.implicitly_wait(10)
@@ -106,36 +117,43 @@ def make_me_present(driver=None, status_link_list=None):
                         show_notification(title="You Are Present Now !!!", message_text=sub_name)
 
             except Exception as exp:
+                logging.error(f"Error : {exp} at make_me_present", stack_info=True)
                 show_notification(title="Error Occurred!!!", message_text=exp)
 
 
 def automate_attendance(cwdir_name=None, username=None, password=None):
-    print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %H:%M")}')
-    print("Starting Session ......")
-    service = Service("/".join([cwdir_name, 'chromedriver']))
-    service.start()
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    options = options.to_capabilities()
-    driver = webdriver.Remote(service.service_url, options)
+    print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}')
+    try:
+        print()
+        logging.info("Starting Session ......")
+        service = Service("/".join([cwdir_name, 'chromedriver']))
+        service.start()
+        options = webdriver.ChromeOptions()
+        options.add_argument('--headless')
+        options = options.to_capabilities()
+        driver = webdriver.Remote(service.service_url, options)
 
-    do_login(driver=driver, username=username, password=password)
+        do_login(driver=driver, username=username, password=password)
 
-    attendance_card_list = get_attendance_events(driver=driver)
+        attendance_card_list = get_attendance_events(driver=driver)
 
-    attendance_link_list = get_activity_links(event_card_list=attendance_card_list)
+        attendance_link_list = get_activity_links(event_card_list=attendance_card_list)
 
-    for attendance_link in attendance_link_list:
-        driver.get(attendance_link)
-        driver.implicitly_wait(10)
-        status_link_list = get_sub_activity_list(driver=driver)
-        make_me_present(driver=driver, status_link_list=status_link_list)
+        for attendance_link in attendance_link_list:
+            driver.get(attendance_link)
+            driver.implicitly_wait(10)
+            status_link_list = get_sub_activity_list(driver=driver)
+            make_me_present(driver=driver, status_link_list=status_link_list)
 
-    driver.quit()
-    print("Ending Session ......")
+        driver.quit()
+        print("Ending Session ......\n")
+        logging.info("Ending Session ......")
+    except Exception as error:
+        logging.error(f"Error : {error} at automate_attendance", stack_info=True)
 
 
 if __name__ == '__main__':
+    logging.info("Script started for today.")
     while True:
         try:
             if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
@@ -148,12 +166,15 @@ if __name__ == '__main__':
                 automate_attendance(cwdir_name=cwd_name, username=user_name, password=user_pass)
                 while True:
                     schedule.run_pending()
-
+                logging.info("Ending Script For Today.")
+                break
             else:
-                print("This is no time for a class !!!")
+                print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}')
+                print("This is no time for a class !!!\n")
                 time.sleep(60)
 
         except Exception as err:
+            logging.error(f"Error : {err} at main", stack_info=True)
             show_notification(title="Error Occurred!!!", message_text=err)
             continue
 
