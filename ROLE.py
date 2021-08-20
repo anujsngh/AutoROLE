@@ -173,7 +173,9 @@ if __name__ == '__main__':
 
                 automate_attendance(cwdir_name=cwd_name, username=user_name, password=user_pass)
                 while True:
-                    schedule.run_pending()
+                    if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (
+                            dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
+                        schedule.run_pending()
                 logging.info("Ending Script For Today.")
                 break
             else:

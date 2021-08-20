@@ -1,52 +1,329 @@
-2021-08-20 11:40:58AM :: INFO :: Script started for today.
-2021-08-20 11:40:58AM :: INFO :: Starting Session ......
-2021-08-20 11:40:59AM :: INFO :: Logging In ......
-2021-08-20 11:41:06AM :: INFO :: Successfully Logged In !!!
-2021-08-20 11:41:06AM :: INFO :: Getting Attendance Event Card List for Today.
-2021-08-20 11:41:06AM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
-2021-08-20 11:41:11AM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
-2021-08-20 11:41:11AM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
-2021-08-20 11:41:12AM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
-2021-08-20 11:41:12AM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
-2021-08-20 11:41:12AM :: INFO :: Ending Session ......
-2021-08-20 11:45:58AM :: INFO :: Starting Session ......
-2021-08-20 11:45:59AM :: INFO :: Logging In ......
-2021-08-20 11:46:03AM :: INFO :: Successfully Logged In !!!
-2021-08-20 11:46:03AM :: INFO :: Getting Attendance Event Card List for Today.
-2021-08-20 11:46:03AM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
-2021-08-20 11:46:05AM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
-2021-08-20 11:46:05AM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
-2021-08-20 11:46:06AM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
-2021-08-20 11:46:06AM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
-2021-08-20 11:46:06AM :: INFO :: Ending Session ......
-2021-08-20 11:51:08AM :: INFO :: Starting Session ......
-2021-08-20 11:51:09AM :: INFO :: Logging In ......
-2021-08-20 11:51:16AM :: INFO :: Successfully Logged In !!!
-2021-08-20 11:51:16AM :: INFO :: Getting Attendance Event Card List for Today.
-2021-08-20 11:51:16AM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
-2021-08-20 11:51:19AM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
-2021-08-20 11:51:19AM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
-2021-08-20 11:51:20AM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
-2021-08-20 11:51:20AM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
-2021-08-20 11:51:20AM :: INFO :: Ending Session ......
-2021-08-20 11:56:22AM :: INFO :: Starting Session ......
-2021-08-20 11:56:23AM :: INFO :: Logging In ......
-2021-08-20 11:56:28AM :: INFO :: Successfully Logged In !!!
-2021-08-20 11:56:28AM :: INFO :: Getting Attendance Event Card List for Today.
-2021-08-20 11:56:28AM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
-2021-08-20 11:56:33AM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
-2021-08-20 11:56:33AM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
-2021-08-20 11:56:33AM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
-2021-08-20 11:56:33AM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
-2021-08-20 11:56:33AM :: INFO :: Ending Session ......
-2021-08-20 11:57:18AM :: INFO :: Script started for today.
-2021-08-20 11:57:18AM :: INFO :: Starting Session ......
-2021-08-20 11:57:19AM :: INFO :: Logging In ......
-2021-08-20 11:57:23AM :: INFO :: Successfully Logged In !!!
-2021-08-20 11:57:23AM :: INFO :: Getting Attendance Event Card List for Today.
-2021-08-20 11:57:23AM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
-2021-08-20 11:57:25AM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
-2021-08-20 11:57:26AM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
-2021-08-20 11:57:26AM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
-2021-08-20 11:57:26AM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
-2021-08-20 11:57:26AM :: INFO :: Ending Session ......
+2021-08-20 04:13:01PM :: INFO :: Script started for today.
+2021-08-20 04:13:01PM :: INFO :: Starting Session ......
+2021-08-20 04:13:03PM :: INFO :: Logging In ......
+2021-08-20 04:13:07PM :: INFO :: Successfully Logged In !!!
+2021-08-20 04:13:07PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 04:13:08PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 04:13:10PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 04:13:10PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 04:13:10PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 04:13:11PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 04:13:11PM :: INFO :: Ending Session ......
+2021-08-20 04:18:01PM :: INFO :: Starting Session ......
+2021-08-20 04:18:02PM :: INFO :: Logging In ......
+2021-08-20 04:18:07PM :: INFO :: Successfully Logged In !!!
+2021-08-20 04:18:07PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 04:18:07PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 04:18:09PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 04:18:09PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 04:18:10PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 04:18:10PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 04:18:10PM :: INFO :: Ending Session ......
+2021-08-20 04:23:12PM :: INFO :: Starting Session ......
+2021-08-20 04:23:13PM :: INFO :: Logging In ......
+2021-08-20 04:23:18PM :: INFO :: Successfully Logged In !!!
+2021-08-20 04:23:18PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 04:23:18PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 04:23:20PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 04:23:20PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 04:23:21PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 04:23:21PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 04:23:21PM :: INFO :: Ending Session ......
+2021-08-20 04:28:23PM :: INFO :: Starting Session ......
+2021-08-20 04:28:24PM :: INFO :: Logging In ......
+2021-08-20 04:28:29PM :: INFO :: Successfully Logged In !!!
+2021-08-20 04:28:29PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 04:28:29PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 04:28:33PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 04:28:33PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 04:28:33PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 04:28:33PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 04:28:33PM :: INFO :: Ending Session ......
+2021-08-20 04:33:35PM :: INFO :: Starting Session ......
+2021-08-20 04:33:37PM :: INFO :: Logging In ......
+2021-08-20 04:33:42PM :: INFO :: Successfully Logged In !!!
+2021-08-20 04:33:42PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 04:33:42PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 04:33:44PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 04:33:44PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 04:33:45PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 04:33:45PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 04:33:45PM :: INFO :: Ending Session ......
+2021-08-20 04:38:48PM :: INFO :: Starting Session ......
+2021-08-20 04:38:49PM :: INFO :: Logging In ......
+2021-08-20 04:38:55PM :: INFO :: Successfully Logged In !!!
+2021-08-20 04:38:55PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 04:38:55PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 04:38:58PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 04:38:58PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 04:38:59PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 04:38:59PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 04:38:59PM :: INFO :: Ending Session ......
+2021-08-20 04:44:02PM :: INFO :: Starting Session ......
+2021-08-20 04:44:03PM :: INFO :: Logging In ......
+2021-08-20 04:44:08PM :: INFO :: Successfully Logged In !!!
+2021-08-20 04:44:08PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 04:44:08PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 04:44:10PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 04:44:10PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 04:44:11PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 04:44:11PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 04:44:11PM :: INFO :: Ending Session ......
+2021-08-20 04:49:13PM :: INFO :: Starting Session ......
+2021-08-20 04:49:14PM :: INFO :: Logging In ......
+2021-08-20 04:49:19PM :: INFO :: Successfully Logged In !!!
+2021-08-20 04:49:19PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 04:49:19PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 04:49:20PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 04:49:20PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 04:49:21PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 04:49:21PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 04:49:21PM :: INFO :: Ending Session ......
+2021-08-20 06:33:28PM :: INFO :: Starting Session ......
+2021-08-20 06:33:31PM :: INFO :: Logging In ......
+2021-08-20 06:33:32PM :: ERROR :: Error : Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: headless chrome=92.0.4515.159)
+ at automate_attendance
+Stack (most recent call last):
+  File "C:\Users\anujs\PycharmProjects\Automate_ROLE\ROLE.py", line 176, in <module>
+    schedule.run_pending()
+  File "C:\Users\anujs\anaconda3\envs\Automate_ROLE\lib\site-packages\schedule\__init__.py", line 780, in run_pending
+    default_scheduler.run_pending()
+  File "C:\Users\anujs\anaconda3\envs\Automate_ROLE\lib\site-packages\schedule\__init__.py", line 100, in run_pending
+    self._run_job(job)
+  File "C:\Users\anujs\anaconda3\envs\Automate_ROLE\lib\site-packages\schedule\__init__.py", line 172, in _run_job
+    ret = job.run()
+  File "C:\Users\anujs\anaconda3\envs\Automate_ROLE\lib\site-packages\schedule\__init__.py", line 661, in run
+    ret = self.job_func()
+  File "C:\Users\anujs\PycharmProjects\Automate_ROLE\ROLE.py", line 156, in automate_attendance
+    logging.error(f"Error : {error} at automate_attendance", stack_info=True)
+2021-08-20 06:34:02PM :: INFO :: Starting Session ......
+2021-08-20 06:34:05PM :: INFO :: Logging In ......
+2021-08-20 06:34:09PM :: INFO :: Successfully Logged In !!!
+2021-08-20 06:34:09PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 06:34:09PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 06:34:12PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 06:34:12PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 06:34:13PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 06:34:13PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 06:34:13PM :: INFO :: Ending Session ......
+2021-08-20 06:39:15PM :: INFO :: Starting Session ......
+2021-08-20 06:39:16PM :: INFO :: Logging In ......
+2021-08-20 06:39:21PM :: INFO :: Successfully Logged In !!!
+2021-08-20 06:39:21PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 06:39:21PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 06:39:23PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 06:39:24PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 06:39:25PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 06:39:25PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 06:39:25PM :: INFO :: Ending Session ......
+2021-08-20 06:44:27PM :: INFO :: Starting Session ......
+2021-08-20 06:44:28PM :: INFO :: Logging In ......
+2021-08-20 06:44:34PM :: INFO :: Successfully Logged In !!!
+2021-08-20 06:44:34PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 06:44:34PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 06:44:36PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 06:44:36PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 06:44:37PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 06:44:37PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 06:44:37PM :: INFO :: Ending Session ......
+2021-08-20 06:49:39PM :: INFO :: Starting Session ......
+2021-08-20 06:49:41PM :: INFO :: Logging In ......
+2021-08-20 06:49:45PM :: INFO :: Successfully Logged In !!!
+2021-08-20 06:49:45PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 06:49:46PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 06:49:48PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 06:49:48PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 06:49:49PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 06:49:49PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 06:49:49PM :: INFO :: Ending Session ......
+2021-08-20 06:54:51PM :: INFO :: Starting Session ......
+2021-08-20 06:54:52PM :: INFO :: Logging In ......
+2021-08-20 06:54:57PM :: INFO :: Successfully Logged In !!!
+2021-08-20 06:54:57PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 06:54:57PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 06:54:59PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 06:54:59PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 06:54:59PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 06:54:59PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 06:54:59PM :: INFO :: Ending Session ......
+2021-08-20 07:00:01PM :: INFO :: Starting Session ......
+2021-08-20 07:00:03PM :: INFO :: Logging In ......
+2021-08-20 07:00:07PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:00:07PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:00:07PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:00:08PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:00:08PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:00:09PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:00:09PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:00:09PM :: INFO :: Ending Session ......
+2021-08-20 07:05:11PM :: INFO :: Starting Session ......
+2021-08-20 07:05:12PM :: INFO :: Logging In ......
+2021-08-20 07:05:16PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:05:16PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:05:16PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:05:18PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:05:18PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:05:19PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:05:19PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:05:19PM :: INFO :: Ending Session ......
+2021-08-20 07:10:21PM :: INFO :: Starting Session ......
+2021-08-20 07:10:23PM :: INFO :: Logging In ......
+2021-08-20 07:10:27PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:10:27PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:10:27PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:10:29PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:10:29PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:10:30PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:10:30PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:10:30PM :: INFO :: Ending Session ......
+2021-08-20 07:15:32PM :: INFO :: Starting Session ......
+2021-08-20 07:15:33PM :: INFO :: Logging In ......
+2021-08-20 07:15:37PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:15:37PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:15:38PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:15:39PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:15:39PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:15:40PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:15:40PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:15:40PM :: INFO :: Ending Session ......
+2021-08-20 07:20:42PM :: INFO :: Starting Session ......
+2021-08-20 07:20:43PM :: INFO :: Logging In ......
+2021-08-20 07:20:48PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:20:48PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:20:48PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:20:50PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:20:50PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:20:50PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:20:50PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:20:50PM :: INFO :: Ending Session ......
+2021-08-20 07:25:53PM :: INFO :: Starting Session ......
+2021-08-20 07:25:54PM :: INFO :: Logging In ......
+2021-08-20 07:25:58PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:25:58PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:25:58PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:26:01PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:26:01PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:26:01PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:26:02PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:26:02PM :: INFO :: Ending Session ......
+2021-08-20 07:31:04PM :: INFO :: Starting Session ......
+2021-08-20 07:31:05PM :: INFO :: Logging In ......
+2021-08-20 07:31:10PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:31:10PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:31:10PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:31:12PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:31:12PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:31:13PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:31:13PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:31:13PM :: INFO :: Ending Session ......
+2021-08-20 07:36:15PM :: INFO :: Starting Session ......
+2021-08-20 07:36:16PM :: INFO :: Logging In ......
+2021-08-20 07:36:22PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:36:22PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:36:22PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:36:26PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:36:26PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:36:26PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:36:26PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:36:26PM :: INFO :: Ending Session ......
+2021-08-20 07:41:29PM :: INFO :: Starting Session ......
+2021-08-20 07:41:30PM :: INFO :: Logging In ......
+2021-08-20 07:41:34PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:41:34PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:41:34PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:41:37PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:41:37PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:41:38PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:41:38PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:41:38PM :: INFO :: Ending Session ......
+2021-08-20 07:46:40PM :: INFO :: Starting Session ......
+2021-08-20 07:46:41PM :: INFO :: Logging In ......
+2021-08-20 07:46:45PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:46:45PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:46:45PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:46:48PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:46:48PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:46:49PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:46:49PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:46:49PM :: INFO :: Ending Session ......
+2021-08-20 07:51:51PM :: INFO :: Starting Session ......
+2021-08-20 07:51:52PM :: INFO :: Logging In ......
+2021-08-20 07:51:58PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:51:58PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:51:58PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:52:05PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:52:05PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:52:06PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:52:06PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:52:06PM :: INFO :: Ending Session ......
+2021-08-20 07:57:08PM :: INFO :: Starting Session ......
+2021-08-20 07:57:09PM :: INFO :: Logging In ......
+2021-08-20 07:57:15PM :: INFO :: Successfully Logged In !!!
+2021-08-20 07:57:15PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 07:57:16PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 07:57:18PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 07:57:18PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 07:57:20PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 07:57:20PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 07:57:20PM :: INFO :: Ending Session ......
+2021-08-20 08:02:22PM :: INFO :: Starting Session ......
+2021-08-20 08:02:23PM :: INFO :: Logging In ......
+2021-08-20 08:02:27PM :: INFO :: Successfully Logged In !!!
+2021-08-20 08:02:27PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 08:02:27PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 08:02:29PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 08:02:29PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 08:02:29PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 08:02:29PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 08:02:29PM :: INFO :: Ending Session ......
+2021-08-20 08:07:32PM :: INFO :: Starting Session ......
+2021-08-20 08:07:33PM :: INFO :: Logging In ......
+2021-08-20 08:07:37PM :: INFO :: Successfully Logged In !!!
+2021-08-20 08:07:37PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 08:07:37PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 08:07:39PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 08:07:39PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 08:07:40PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 08:07:40PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 08:07:40PM :: INFO :: Ending Session ......
+2021-08-20 08:12:42PM :: INFO :: Starting Session ......
+2021-08-20 08:12:43PM :: INFO :: Logging In ......
+2021-08-20 08:12:47PM :: INFO :: Successfully Logged In !!!
+2021-08-20 08:12:47PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 08:12:47PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 08:12:49PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 08:12:49PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 08:12:49PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 08:12:49PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 08:12:49PM :: INFO :: Ending Session ......
+2021-08-20 08:17:51PM :: INFO :: Starting Session ......
+2021-08-20 08:17:52PM :: INFO :: Logging In ......
+2021-08-20 08:17:56PM :: INFO :: Successfully Logged In !!!
+2021-08-20 08:17:56PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 08:17:56PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 08:17:58PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 08:17:58PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 08:17:59PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 08:17:59PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 08:17:59PM :: INFO :: Ending Session ......
+2021-08-20 08:23:01PM :: INFO :: Starting Session ......
+2021-08-20 08:23:02PM :: INFO :: Logging In ......
+2021-08-20 08:23:06PM :: INFO :: Successfully Logged In !!!
+2021-08-20 08:23:06PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 08:23:06PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 08:23:08PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 08:23:08PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 08:23:09PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 08:23:09PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 08:23:09PM :: INFO :: Ending Session ......
+2021-08-20 08:28:11PM :: INFO :: Starting Session ......
+2021-08-20 08:28:12PM :: INFO :: Logging In ......
+2021-08-20 08:28:15PM :: INFO :: Successfully Logged In !!!
+2021-08-20 08:28:15PM :: INFO :: Getting Attendance Event Card List for Today.
+2021-08-20 08:28:15PM :: INFO :: Getting Attendance Activity Links From Event Card List for Today.
+2021-08-20 08:28:17PM :: INFO :: Checking Active Attendance Links for 2021-Data Communication-CS 504-A
+2021-08-20 08:28:18PM :: INFO :: Got 0 Active Attendance Link for 2021-Data Communication-CS 504-A
+2021-08-20 08:28:18PM :: INFO :: Checking Active Attendance Links for 2021-Cyber Security-CS 511-A
+2021-08-20 08:28:18PM :: INFO :: Got 0 Active Attendance Link for 2021-Cyber Security-CS 511-A
+2021-08-20 08:28:18PM :: INFO :: Ending Session ......
