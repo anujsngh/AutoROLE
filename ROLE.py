@@ -10,7 +10,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 
-logging.basicConfig(filename='role.log', filemode='a', format='%(asctime)s :: %(levelname)s :: %(message)s', datefmt='%Y-%m-%d %I:%M:%S%p', level=logging.INFO)
+logging.basicConfig(filename='role.log', filemode='w', format='%(asctime)s :: %(levelname)s :: %(message)s', datefmt='%Y-%m-%d %I:%M:%S%p', level=logging.INFO)
 
 
 def show_notification(title=None, message_text=None):
@@ -122,34 +122,42 @@ def make_me_present(driver=None, status_link_list=None):
 
 
 def automate_attendance(cwdir_name=None, username=None, password=None):
-    print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}')
-    try:
-        print()
-        logging.info("Starting Session ......")
-        service = Service("/".join([cwdir_name, 'chromedriver']))
-        service.start()
-        options = webdriver.ChromeOptions()
-        options.add_argument('--headless')
-        options = options.to_capabilities()
-        driver = webdriver.Remote(service.service_url, options)
+    c = 0
+    while True:
+        c += 1
+        print(f'\nCurrent Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}\n')
+        try:
+            print("Starting Session ......\n")
+            logging.info("Starting Session ......")
+            service = Service("/".join([cwdir_name, 'chromedriver']))
+            service.start()
+            options = webdriver.ChromeOptions()
+            options.add_argument('--headless')
+            options = options.to_capabilities()
+            driver = webdriver.Remote(service.service_url, options)
 
-        do_login(driver=driver, username=username, password=password)
+            do_login(driver=driver, username=username, password=password)
 
-        attendance_card_list = get_attendance_events(driver=driver)
+            attendance_card_list = get_attendance_events(driver=driver)
 
-        attendance_link_list = get_activity_links(event_card_list=attendance_card_list)
+            attendance_link_list = get_activity_links(event_card_list=attendance_card_list)
 
-        for attendance_link in attendance_link_list:
-            driver.get(attendance_link)
-            driver.implicitly_wait(10)
-            status_link_list = get_sub_activity_list(driver=driver)
-            make_me_present(driver=driver, status_link_list=status_link_list)
+            for attendance_link in attendance_link_list:
+                driver.get(attendance_link)
+                driver.implicitly_wait(10)
+                status_link_list = get_sub_activity_list(driver=driver)
+                make_me_present(driver=driver, status_link_list=status_link_list)
 
-        driver.quit()
-        print("Ending Session ......\n")
-        logging.info("Ending Session ......")
-    except Exception as error:
-        logging.error(f"Error : {error} at automate_attendance", stack_info=True)
+            driver.quit()
+            print("\nEnding Session ......\n")
+            logging.info("Ending Session ......")
+            break
+        except Exception as error:
+            logging.error(f"Error : {error} at automate_attendance", stack_info=True)
+            if c >= 5:
+                break
+            time.sleep(30)
+            continue
 
 
 if __name__ == '__main__':
@@ -169,7 +177,7 @@ if __name__ == '__main__':
                 logging.info("Ending Script For Today.")
                 break
             else:
-                print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}')
+                print(f'\nCurrent Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}\n')
                 print("This is no time for a class !!!\n")
                 time.sleep(60)
 
