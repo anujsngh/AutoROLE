@@ -151,8 +151,8 @@ def automate_attendance(cwdir_name=None, username=None, password=None):
 
 
 if __name__ == '__main__':
+    logging.debug("Script started for today.")
     while True:
-        logging.debug("Script started for today.")
         try:
             if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
                 cwd_name = os.path.dirname(os.path.realpath(__file__)).replace('\\', '/')
@@ -164,7 +164,7 @@ if __name__ == '__main__':
                 automate_attendance(cwdir_name=cwd_name, username=user_name, password=user_pass)
                 while True:
                     schedule.run_pending()
-
+                    break
             else:
                 print(f'Current Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}')
                 print("This is no time for a class !!!\n")
