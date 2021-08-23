@@ -176,6 +176,13 @@ if __name__ == '__main__':
                     if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (
                             dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
                         schedule.run_pending()
+                    elif dt.datetime.now() > pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00"):
+                        break
+                    else:
+                        continue
+                logging.info("Ending Script For Today.")
+                break
+            elif dt.datetime.now() > pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00"):
                 logging.info("Ending Script For Today.")
                 break
             else:
