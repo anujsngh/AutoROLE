@@ -160,16 +160,18 @@ def automate_attendance(cwdir_name=None, username=None, password=None):
             continue
 
 
-if __name__ == '__main__':
+def main():
     logging.info("Script started for today.")
     while True:
         try:
-            if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
+            if (dt.datetime.now() >= pd.to_datetime(str(dt.datetime.now().date()) + " 10:00:00")) and (
+                    dt.datetime.now() <= pd.to_datetime(str(dt.datetime.now().date()) + " 17:00:00")):
                 cwd_name = os.path.dirname(os.path.realpath(__file__)).replace('\\', '/')
                 user_name = os.environ.get('ROLE_USERNAME')
                 user_pass = os.environ.get('ROLE_PASSWORD')
 
-                schedule.every(5).minutes.do(automate_attendance, cwdir_name=cwd_name, username=user_name, password=user_pass)
+                schedule.every(5).minutes.do(automate_attendance, cwdir_name=cwd_name, username=user_name,
+                                             password=user_pass)
 
                 automate_attendance(cwdir_name=cwd_name, username=user_name, password=user_pass)
                 while True:
@@ -195,3 +197,9 @@ if __name__ == '__main__':
             show_notification(title="Error Occurred!!!", message_text=err)
             continue
 
+
+if __name__ == '__main__':
+    schedule.every().day.at("09:45").do(main)
+
+    while True:
+        schedule.run_pending()
