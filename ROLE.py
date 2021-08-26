@@ -199,8 +199,12 @@ def main():
 
 
 if __name__ == '__main__':
-    if dt.datetime.now() > pd.to_datetime(str(dt.datetime.now().date()) + " 09:46:00"):
-        main()
-    schedule.every().day.at("09:45").do(main)
     while True:
-        schedule.run_pending()
+        try:
+            if dt.datetime.now() > pd.to_datetime(str(dt.datetime.now().date()) + " 09:46:00"):
+                main()
+            schedule.every().day.at("09:45").do(main)
+            while True:
+                schedule.run_pending()
+        except:
+            continue
