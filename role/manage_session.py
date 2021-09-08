@@ -1,10 +1,72 @@
-from role import logging, BeautifulSoup, pd
 from role.manage_notification import show_notification
+from role import dt, logging, Service, webdriver, time, os, BeautifulSoup, pd, config_dict, projdir_name
 
 
-def do_login(driver=None, username=None, password=None):
+def session_manager():
+    logging.info("session_manager had started")
+
+    c = 0
+    while True:
+        c += 1
+        print(f'\nCurrent Time : {dt.datetime.strftime(dt.datetime.now(), "%Y-%m-%d %I:%M:%S%p")}\n')
+        try:
+            scrap_session()
+            break
+        except Exception as err:
+            logging.error(f"Error at Session Manager : {err}", stack_info=True)
+            show_notification(title="Error at Session Manager", message_text=err)
+            if c >= 5:
+                break
+            time.sleep(60)
+            continue
+
+    logging.info("session_manager had stopped")
+
+
+def scrap_session():
+    print("Starting Session ......\n")
+    logging.info("Starting Session")
+
+    chromedriver_path = "/".join([projdir_name, 'chromedriver'])
+    service = Service(chromedriver_path)
+    service.start()
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    options = options.to_capabilities()
+    driver = webdriver.Remote(service.service_url, options)
+
+    do_login(driver=driver)
+
+    attendance_card_list = get_attendance_events(driver=driver)
+
+    attendance_link_list = get_activity_links(event_card_list=attendance_card_list)
+
+    for attendance_link in attendance_link_list:
+        driver.get(attendance_link)
+        driver.implicitly_wait(10)
+        status_link_list = get_sub_activity_list(driver=driver)
+        make_me_present(driver=driver, status_link_list=status_link_list)
+        driver.implicitly_wait(10)
+        # driver.close()
+
+    driver.quit()
+
+    print("\nEnding Session ......\n")
+    logging.info("Ending Session ......")
+
+
+def do_login(driver=None):
+    if config_dict["login_credentials"]["username"] == "username":
+        username = os.environ.get('ROLE_USERNAME')
+    else:
+        username = config_dict["login_credentials"]["username"]
+    if config_dict["login_credentials"]["password"] == "password":
+        password = os.environ.get('ROLE_PASSWORD')
+    else:
+        password = config_dict["login_credentials"]["password"]
+
     print("Logging In ......")
-    logging.info("Logging In ......")
+    logging.info("Logging In")
     # driver.get("https://cse.rgpvonline.org/calendar/view.php?view=upcoming")
     driver.get("https://cse.rgpvonline.org/calendar/view.php?view=day")
     driver.implicitly_wait(10)
@@ -16,7 +78,7 @@ def do_login(driver=None, username=None, password=None):
     driver.find_element_by_xpath('//*[@id="rememberusername"]').click()
     login_btn.click()
     print("Successfully Logged In !!!")
-    logging.info("Successfully Logged In !!!")
+    logging.info("Successfully Logged In")
 
 
 def get_attendance_events(driver=None):
@@ -95,3 +157,7 @@ def make_me_present(driver=None, status_link_list=None):
             except Exception as exp:
                 logging.error(f"Error : {exp} at make_me_present", stack_info=True)
                 show_notification(title="Error Occurred!!!", message_text=exp)
+
+
+if __name__ == '__main__':
+    session_manager()
