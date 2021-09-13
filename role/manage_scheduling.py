@@ -36,8 +36,7 @@ def session_schedule_manager():
 
 def schedule_manager():
     logging.info("schedule_manager had started")
-
-    schedule.every().day.at(start_time[:-4]).do(session_schedule_manager)
+    schedule.every().day.at(start_time[:-3]).do(session_schedule_manager)
     while True:
         schedule.run_pending()
 

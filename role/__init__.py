@@ -34,6 +34,7 @@ def get_config_settings():
 config_dict = get_config_settings()
 # print(config_dict.sections())
 start_time = config_dict["schedule_settings"]["start_time"]
+print(start_time)
 end_time = config_dict["schedule_settings"]["end_time"]
 
 
