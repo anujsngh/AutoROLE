@@ -1,5 +1,7 @@
 # Automate_ROLE
-This simple script automates attendance process in ROLE/MOODLE.
+
+### Description
+This is a nifty project that simplifies the attendance process in ROLE/MOODLE. It enabled me to swiftly record my attendance within the 5-minute window available after my online Microsoft Teams class.
 
 steps:
 1) Create "ROLE_USERNAME" and "ROLE_PASSWORD" environment variables in environment variables with their values as your moodle/ROLE username and password respectively. -> https://www.youtube.com/watch?v=Frrlv_5rGhY
