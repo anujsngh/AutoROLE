@@ -1,4 +1,4 @@
-# Automate_ROLE
+# AutoROLE
 
 ### Description
 This is a nifty project that simplifies the attendance process in ROLE/MOODLE. It enabled me to swiftly record my attendance within the 5-minute window available after my online Microsoft Teams class.
